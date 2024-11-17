@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(16,16,16);
+    color: white;
+}
+
+/***NAVIGATION BAR*******/
+  nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 8vh;
+    width: 100%;
+    padding: 2%;
+    font-size: 0.9em;
+  }
+  
+  nav ul {
+    display: flex;
+    width: 65%;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 2%;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+  
+  ul li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1.8px;
+  }
+  
+  ul li a:hover {
+    color:  rgb(165, 165, 165);
+    transition: 0.3s ease-in;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
