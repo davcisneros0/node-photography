@@ -152,3 +152,51 @@ body {
     font-size: 1.5em;
   }
   
+
+  /*****ABOUT PAGE*******/
+  
+  
+  #section-1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+  }
+  
+  #section-1-container p {
+    width: 100%;
+    font-size: 1em;
+    padding: 1%;
+    margin-left: 2%;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*ANIMATION DURATION FOR SECTIONS TO SLIDE*/
+  
+  .animate__animated.animate__fadeInLeft {
+    --animate-duration: 2s;
+  }
+  
+  .animate__animated.animate__fadeInRight {
+    --animate-duration: 2s;
+  }
+  
+  #section-2-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    padding: 3%;
+  }
+  
+  #section-2-container p {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 1%;
+    margin-left: 2%;  
+    color: rgb(255, 255, 255);
+  }
+  
+  #section-2-container img {
+    padding: 1%;
+  }
