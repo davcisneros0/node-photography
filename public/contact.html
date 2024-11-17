@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Photography Website of Aviation and Cities">
+        <meta name="author" content="David Cisneros">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Spartan:wght@600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bcf828a995.js" crossorigin="anonymous"></script>
+        <title>David Cisneros | Contact</title>
+        <style>
+            @media only screen and (max-width: 1200px) {
+
+                #left-container {
+                    width: 100%;
+                    font-size: 1em;
+                }
+                
+                #right-container {
+                    width: 100%;
+                    text-align: center;
+                    margin: 1%;
+                }
+
+                textarea {
+                    width: 90%;
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <header id="header-container">
+                <h1>DAVID CISNEROS</h1>
+                <p>Canon 80D | Photographer</p>
+            </header>
+ 
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <div id="contact-container">
+            <section id="left-container" class="animate__animated animate__backInLeft">
+                
+                <h2>Let's do something together!</h2>
+            </section>
+
+            <section id="right-container">
+                    <form method="post">
+
+                        <label>First Name<span class="req">*</span></label>
+                        <input type="text" name="firstname" autocomplete=on required>
+                        
+                        <br>
+
+                        <label>Last Name</label>
+                        <input type="text" name="lastname" autocomplete=on>
+
+                    
+
+                        <br><label>Email<span class="req">*</span></label>
+                        <input type="email" name="email-signup" autocomplete="on" required><br>
+
+                        <br>
+
+                        <label>Message<span class="req">*</span></label>
+                        <br>
+                        <textarea id="message" name="message" rows="10" cols="70" required></textarea>
+
+                        <br>
+                        <button type="submit" class="sButton">Submit</button>
+                    </form>
+            </section>
+        </div>
+    </body>
+</html>

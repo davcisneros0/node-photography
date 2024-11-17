@@ -200,3 +200,74 @@ body {
   #section-2-container img {
     padding: 1%;
   }
+
+  /*******CONTACT PAGE*****/
+  
+  #contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+  
+  #left-container {
+  width: 50%;
+  font-size: 1.3em;
+  padding: 2%;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  color: rgb(255, 255, 255);
+  }
+  
+  
+  #right-container {
+  width: 50%;
+  font-size: 1.3em;
+  padding: 2%;
+  font-family: 'Spartan', sans-serif;
+  }
+  
+  .req {
+    color: rgb(255, 38, 0);
+    font-weight: 500;
+  }
+  
+  input {
+    width: 40%;
+    margin: 1%;
+    padding: 0.8%;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: rgba(255, 255, 255);
+  }
+  
+  textarea {
+    margin-top: 1%;
+    resize: vertical;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: rgba(255, 255, 255);
+  }
+  
+  .sButton {
+    padding: 1%;
+    margin-top: 1%;
+    width: 15%;
+    color: rgb(1, 0, 85);
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  #contact-footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    nav ul {
+      width: 100%;
+      margin-top: 5%;
+  }
+  }
