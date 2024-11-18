@@ -13,6 +13,21 @@
         <script src="https://kit.fontawesome.com/bcf828a995.js" crossorigin="anonymous"></script>
         <title>David Cisneros | Contact</title>
         <style>
+            #notification {
+                display: none; 
+                position: fixed;
+                left: 50%; 
+                top: 0;
+                background-color: #3d883f;
+                color: white;
+                width: 100%;
+                padding: 15px;
+                border-radius: 2px;
+                z-index: 1000;
+                transform: translateX(-50%);
+                transition: opacity 0.5 ease;
+                text-align: center;
+            }
             @media only screen and (max-width: 1200px) {
 
                 #left-container {
@@ -32,6 +47,28 @@
 
             }
         </style>
+        <script>
+            //"MESSAGE" PARAMETER IS THE MESSAGE TO BE DISPLAYED
+            function showNotification(message) {
+                const notification = document.getElementById('notification');
+                
+                //set message using innerText, inside function's parameter
+                //show notification using display block
+                //show notification using opacity 1
+                notification.innerText = message;
+                notification.style.display = 'block';
+                notification.style.opacity = '1';
+
+                //Hide notification after 3 seconds
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                    }, 500)
+                }, 3000)
+                
+            }
+        </script>
     </head>
 
     <body>
@@ -50,6 +87,9 @@
             </nav>
 
         </div>
+        
+        <!--green notification bar that displays once user submits form-->
+        <div id="notification"></div>
 
 
         <div id="contact-container">
@@ -59,7 +99,10 @@
             </section>
 
             <section id="right-container">
-                    <form method="post">
+                    <form method="post" 
+                        onsubmit="event.preventDefault(); 
+                        showNotification('Form sent successfully!');
+                        this.reset();">
 
                         <label>First Name<span class="req">*</span></label>
                         <input type="text" name="firstname" autocomplete=on required>
